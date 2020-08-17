@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href ="main.css">
+    <link rel="icon" href="data:,">
+    <title>Covenant University Portal</title>
+</head>
+<body>
+    <div class="showcase">
+        <div class="showcase-container">
+            <div class="logo">
+                <a href="https://covenantuniversity.edu.ng/" target="_blank"><img src="LexDev.png" class="logo-img" alt="CU Logo"></a>
+            </div>
+            <div class="lead">
+                <p>Login</p>
+            </div>
+            <div class="form-container">
+                <form name="myPortal" action="#" class="login" method="post">
+                    <div>
+                        <i class="far fa-grin fa-lg"></i>
+                        <div>
+                            <!-- <label for="username">Username</label> -->
+                            <input type="text" name="userName" id="username" title="Please fill out this field" placeholder="Username">
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fas fa-key fa-lg"></i>
+                        <div>
+                            <!-- <label for="password">Password</label> -->
+                            <input type="password" name="passWord" id="password" title="Please fill out this field" placeholder="Password">
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" onclick="return validateForm()" value="LOG IN">
+                    </div>
+                </form>
+            </div>
+            <p>Don't have an account? <a href="#" class="sign">Sign Up</a></p>
+            <p><a href="#">Forgot Password?</a></p>
+        </div>
+    </div>
+    <footer id="footer">
+        <p>Lex Dev,  &copy; 2020</p>
+    </footer>
+
+    <script src="/app.js"></script>
+</body>
+</html>

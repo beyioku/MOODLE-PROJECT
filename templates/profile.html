@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href ="main.css">
+    <link rel="icon" href="data:,">
+    <title>Covenant University Login Portal</title>
+</head>
+<body>
+    <div class="logo">
+                    <span class="name"><IMG src="logo.png" style='height:50px;width:50px;padding:10px;margin-right:5px;margin-top:-5px;margin-bottom:-20px;border-radius:50%'>CU PORTAL</span>
+     </div>
+
+    <div class="header">
+        <IMG src="calebguy.jpg" height="200" width="300">
+         <h1 class="nav">
+              Welcome beyioku smart</h1>
+            |<a title="Logout" href=" logout.php">Logout now </a>
+
+    </div>
+
+    <div class="main-wrapper container clearfix">
+
+            <div id="tabbed-container">
+
+                <ul class="resp-tabs-list four columns">
+                    <li id="menu"><a href='profile.php'  target="frame">HOME</a></li>
+
+                    <li id="menu"><a href='#'>CLASS ADMINISTRATION</a>
+                        <ul id="sub-menu">
+                            <li><a href="classadministration/finalclearance.php"  target="frame">Final Clearance</a></li>
+
+                        </ul>
+
+                    <li id='menu'><a href='#'>SETTINGS</a>
+                        <ul id='sub-menu'>
+                                                        <li><a href="settings/chgPaswordWe.php"  target="frame">Change Password</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <form action="calebserver.txt" method="post">
+                <label for="level"> LEVEL</label>
+                <select name="level" id="level">
+                    <option value="0"> 100 </option>
+                    <option value="1"> 200 </option>
+                    <option value="2"> 300 </option>
+                    <option value="3"> 400 </option>
+                    <option value="4"> Eng idiots </option>
+                    <option value="5"> special case </option>
+                </select>
+                <label for="thedate"> DATE </label>
+                <input type="date"/>
+                <label for="text"> COMPLAINS </label>
+                <textarea name="text" id="text"></textarea>
+                <button type="submit">SUBMIT</button>
+            </form>
+
+
+</body>
+
+<?php
+session_start();
+session_destroy();
+header("location:/index.html");
+exit();
+?>
+
+
+
+
